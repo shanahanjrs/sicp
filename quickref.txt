@@ -1,0 +1,5 @@
+Scheme quick reference.
+
+Will add notes here as I move along.
+This will serve as a self-made cheat sheet for Scheme including things I pick
+up while reading SICP.
