@@ -3,3 +3,54 @@ Scheme quick reference.
 Will add notes here as I move along.
 This will serve as a self-made cheat sheet for Scheme including things I pick
 up while reading SICP.
+
+---------
+Chapter 1
+---------
+
+Defining a variable
+-------------------
+
+(define pi 3.14159)
+(define radius 10)
+(define circumference (* 2 pi radius))
+
+Functions
+---------
+
+(define (square x) (* x x))
+^        ^      ^   ^     ^
+1*       2*     3*  4*    5*
+
+1* Define a function
+2* Function name
+3* Function variables
+4* Function body
+5* End function
+
+Evaluation order
+----------------
+
+Applicative order:
+Evaluate arguments first, then substitute them into
+body of code.
+
+Normal order:
+Evaluate expressions as-needed.
+
+Conditionals
+------------
+
+(cond ([P1] [E1])
+      ([P2] [E2])
+      .
+      .
+      ([Pn] [En]))
+
+(if [predicate] [consequent] [alternative])
+
+(or [E1] ... [En])
+
+(and [E1] ... [En])
+
+(not [E])
